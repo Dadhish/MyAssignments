@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+W.a. TestNG program to use parameterized demo with multiple parameter of Facebook login with TestNG.
+-->
+
+<suite parallel="false" name="Suite">
+
+  <test name="Test1">
+  	
+  	<parameter name="username" value="charmi@gmail.com"/>
+   	
+   	<parameter name="password" value="charmi@123"/>
+   	    
+    <classes>
+      <class name="com.testng.TestNGParameter"/>
+    </classes>
+  
+  </test> <!-- Test -->
+  
+  <test name="Test2">
+  
+    <parameter name="username" value="arpita@gmail.com"/>
+   	<parameter name="password" value="arpita@123"/>
+   
+    <classes>
+      <class name="com.TestNG.TestNGParameter"/>
+    </classes>
+  
+  </test> <!-- Test -->
+
+</suite> <!-- Suite -->
